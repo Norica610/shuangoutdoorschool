@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(105, 164, 102); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 80px;
+    left: 4rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    nav a:hover {
+        color: #ffdd57; 
+    }
+
+    nav a.active {
+        border-bottom: 2px solid #ffdd57;
+    }
+
+.brave {
+    position: relative;
+    text-align: left;
+}
+
+    .brave img {
+        width: 100%;
+        height: 500px;
+        display: block;
+        filter: brightness(80%);
+        object-fit: cover;
+    }
+    .slideshow {
+        width: 100%;
+        height: 500px;
+        display: block;
+        filter: brightness(80%);
+        object-fit: cover;
+        transition: opacity 1s ease-in-out;
+    }
+    .brave-content {
+      position: absolute;
+      inset: 0;                   
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;   
+      gap: 12px;
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+      padding: 0 16px;
+    }
+    .brave h1 {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .brave h3 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .green-btn {
+        position: absolute;
+        padding: 10px 20px;
+        top: 60%;
+        left: 35%;
+        font-size: 16px;
+        font-weight: bold;
+        background-color:  rgb(105, 164, 102);;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .green-btn:hover {
+        background-color: #006400; 
+        color: white;        
+    }
+
+.intro {
+  align-items:flex-start;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 40px 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+
+.intro-container {
+  display:flex;  
+  align-items: center;     
+  justify-content: space-between;
+  gap: 30px;                 
+}
+
+.intro-text {
+  flex: 2;
+  min-width:400px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 2rem;
+
+}
+  
+.intro-img img {
+  width: 100%;
+  flex:1;
+  height: auto;
+  border-radius: 8px;
+  margin:0auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.partTwo {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 3rem auto;
+    background-color: #f5f5f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.review-img {
+    flex: 1;
+}
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-text {
+    flex: 1;
+    background-color: rgb(105, 164, 102);
+    color: white;
+    padding: 2rem;
+}
+
+.review-text h2 {
+    margin-bottom: 1rem;
+}
+
+.review-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 16px;
+
+}
+.staffTitle {
+  text-align: center;
+  font-size:2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.staffMembers {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1500px;
+  margin: 0 auto ;
+  padding: 5rem;
+  flex-wrap:wrap;
+}
+
+.staffCard {
+  flex: 0.5;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2rem;
+  gap:20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.staffCard img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5%; 
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.staffCard h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.staffCard p {
+  margin: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.staffCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+main h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+main p {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 0.95rem;
+
+}
+.landGallery {
+  text-align: center;
+  margin: 40px auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.desc {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: bold;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); 
+}
+.bottom {
+  font-size: 1rem;     
+  text-align: center;     
+  color: #333;           
+  margin-bottom: 1.5rem;  
+}
+.bottom-link {
+  text-decoration: none;  
+  color: inherit;         
+  font: inherit;          
+  cursor: pointer;        
+}
+
+.bottom-link:hover {
+  text-decoration: underline;
+  color: #2a7c2a;          
+}
+.page-footer {
+  border-top: 2px solid #ccc;   
+  margin-top: 3rem;             
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #444;
+}
+
+.footer-content p {
+  margin-bottom: 1rem; 
+  font-size: 0.9rem;
+}
+
+.social-icons a {
+  margin: 0 1rem;               
+  text-decoration: none;        
+  font-size: 1rem;
+  color: #2d6a4f;               
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1b4332;              
+}
+
+
+@media (max-width: 900px) {
+    .staff {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .staff {
+        grid-template-columns: 1fr;
+    }
+}
