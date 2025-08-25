@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = [
     "image/water_Activities/kayaking.jpg",
     "image/Rope_Activities/climbing.jpg",
-    "image/Land_Activities/archery.jpg"
+    "image/Land_Activities/archery.jpg",
+    "image/Land_Activities/Orienteering2.jpg"
   ];
 
   let index = 0;
