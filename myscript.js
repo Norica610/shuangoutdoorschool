@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "image/Rope_Activities/climbing.jpg",
     "image/Land_Activities/archery.jpg",
     "image/Land_Activities/Orienteering2.jpg",
+    "image/Water_Activities/Kayaking.jpg",
+
   ];
 
   let index = 0;
